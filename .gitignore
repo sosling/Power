@@ -8,3 +8,10 @@ Thumbs.db
 serve.py
 server.js
 start_server.vbs
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
