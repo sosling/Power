@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Power SKY | 固体金属燃料航空能源系统</title>
+    <meta
+      name="description"
+      content="Power SKY builds solid metal fuel aviation power systems for long-endurance UAVs: cartridge, controlled hydrogen generation, PEM power, and flight energy control."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="Power SKY">
+        <span class="mark"></span>
+        <span>Power SKY</span>
+      </a>
+      <nav aria-label="主导航">
+        <a href="#technology">技术</a>
+        <a href="#market">市场</a>
+        <a href="#moat">壁垒</a>
+        <a href="#contact">投资人联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="kicker">Solid Metal Fuel Power Unit for UAV</p>
+          <h1 id="hero-title">把铝变成可编程航空能源</h1>
+          <p class="lead">
+            Power SKY 正在开发固体金属燃料按需释氢/航空电源系统，让工业无人机从 1-2 小时续航进入 8-12 小时。
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#contact">预约投资人沟通</a>
+            <a class="secondary" href="#technology">查看系统架构</a>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <img src="./assets/energy-system.svg" alt="固体金属燃料航空能源系统架构视觉图" />
+        </figure>
+      </section>
+
+      <section class="metrics" aria-label="核心指标">
+        <div><strong>8-12h</strong><span>目标续航窗口</span></div>
+        <div><strong>3-5 kWh/kg</strong><span>系统级能量密度目标</span></div>
+        <div><strong>0 MPa</strong><span>无高压氢瓶储氢</span></div>
+        <div><strong>60%+</strong><span>燃料盒毛利潜力</span></div>
+      </section>
+
+      <section class="section split" id="technology">
+        <div>
+          <p class="kicker">Technology</p>
+          <h2>不是"铝水反应"，而是可控化学能源发动机</h2>
+          <p>
+            系统由固体燃料盒、分区反应器、净化缓冲、PEM 电源单元和飞行功率预测控制组成。核心不是材料配方，而是把无人机负载变化翻译成可执行的供料、释氢和缓冲策略。
+          </p>
+        </div>
+        <ol class="system-list">
+          <li><span>01</span><b>飞控功率预测</b><small>预测未来 2-5 秒功率需求</small></li>
+          <li><span>02</span><b>氢气需求控制器</b><small>计算 H₂ 流量与缓冲压力</small></li>
+          <li><span>03</span><b>固体燃料供料</b><small>螺旋、流化或微通道执行</small></li>
+          <li><span>04</span><b>PEM 电源输出</b><small>稳定供电给飞控与电机</small></li>
+        </ol>
+      </section>
+
+      <section class="section dark" id="market">
+        <p class="kicker">Market Window</p>
+        <h2>长续航无人机卡在能源密度，不是卡在飞控算法</h2>
+        <div class="use-grid">
+          <article><h3>物流无人机</h3><p>10-100 km 中长距离配送，需要更少补能、更高出勤率。</p></article>
+          <article><h3>海岛与山区巡检</h3><p>远离充电基础设施，任务更看重续航和可运输燃料。</p></article>
+          <article><h3>边境与应急通信</h3><p>长时间滞空、低维护、常温存储能源具备显著优势。</p></article>
+          <article><h3>高端工业平台</h3><p>10-50 kg 级无人机位于锂电和燃油系统之间的空白带。</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="moat">
+        <p class="kicker">Moat</p>
+        <h2>三层护城河：控制算法、反应器工程、燃料盒标准</h2>
+        <div class="moat">
+          <div><b>动态释氢控制</b><p>功率预测、供料闭环、缓冲补偿，解决无人机负载突变。</p></div>
+          <div><b>分区反应器</b><p>预热、主反应、补反应、气液分离、连续排渣，降低热失控与堵塞风险。</p></div>
+          <div><b>耗材模型</b><p>燃料盒快拆、余量识别、接口标准和安全联锁，形成复购收入。</p></div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="kicker">Investor Access</p>
+          <h2>申请查看投资材料</h2>
+          <p>
+            留下联系方式后，可进一步沟通商业计划书、样机路线、专利布局与融资用途。建议投资人、产业方、无人机平台合作方填写。
+          </p>
+        </div>
+        <form id="lead-form" class="lead-form" method="post" action="/api/contact">
+          <label>姓名<input required name="name" autocomplete="name" /></label>
+          <label>公司/机构<input name="company" autocomplete="organization" /></label>
+          <label>邮箱<input required type="email" name="email" autocomplete="email" /></label>
+          <label>电话<input name="phone" autocomplete="tel" /></label>
+          <label>身份
+            <select name="role">
+              <option>投资人</option>
+              <option>产业合作方</option>
+              <option>无人机平台方</option>
+              <option>其他</option>
+            </select>
+          </label>
+          <label>留言<textarea name="message" rows="4" placeholder="请简单说明关注点、基金/机构背景或合作方向"></textarea></label>
+          <button type="submit">提交联系信息</button>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <span>Power SKY</span>
+      <span>Solid Metal Fuel Aviation Power System</span>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
