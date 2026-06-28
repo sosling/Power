@@ -1,0 +1,10 @@
+# Node
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# Server files (not needed for Pages)
+serve.py
+server.js
+start_server.vbs
