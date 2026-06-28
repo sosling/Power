@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Solid metal fuel aviation power system</title>
+  <desc id="desc">A cinematic technical rendering of a drone energy module, hydrogen pathway, PEM stack, and cartridge system.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060709"/>
+      <stop offset="0.48" stop-color="#12151a"/>
+      <stop offset="1" stop-color="#031716"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f7fa"/>
+      <stop offset="0.38" stop-color="#98a4b3"/>
+      <stop offset="1" stop-color="#27313d"/>
+    </linearGradient>
+    <linearGradient id="fuel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff6b35"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.2 0 0.65 0 0 1 0 0 0.65 0 0.8 0 0 0 1 0"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <g opacity="0.28" stroke="#7dd3fc" stroke-width="1">
+    <path d="M80 140h420M120 240h280M1000 160h260M900 720h380M90 760h420"/>
+    <path d="M260 120v620M1160 120v650M720 80v740" opacity="0.28"/>
+  </g>
+  <g transform="translate(170 130)">
+    <path d="M260 170c125-65 290-65 420 0" fill="none" stroke="#cbd5e1" stroke-width="18" stroke-linecap="round" opacity="0.6"/>
+    <path d="M250 480c130 70 300 70 440 0" fill="none" stroke="#cbd5e1" stroke-width="18" stroke-linecap="round" opacity="0.45"/>
+    <g fill="none" stroke="#e2e8f0" stroke-width="20" stroke-linecap="round" opacity="0.72">
+      <path d="M470 210v250"/>
+      <path d="M345 335h250"/>
+    </g>
+    <g fill="#0b1118" stroke="#93a4b8" stroke-width="2">
+      <circle cx="250" cy="170" r="64"/>
+      <circle cx="690" cy="170" r="64"/>
+      <circle cx="250" cy="480" r="64"/>
+      <circle cx="690" cy="480" r="64"/>
+    </g>
+    <g fill="none" stroke="#e2e8f0" stroke-width="5" opacity="0.65">
+      <circle cx="250" cy="170" r="42"/>
+      <circle cx="690" cy="170" r="42"/>
+      <circle cx="250" cy="480" r="42"/>
+      <circle cx="690" cy="480" r="42"/>
+    </g>
+    <rect x="350" y="248" width="240" height="160" rx="28" fill="url(#metal)" stroke="#f8fafc" stroke-width="2"/>
+    <rect x="385" y="280" width="170" height="46" rx="14" fill="#071013" stroke="#74f2ce" stroke-width="2"/>
+    <rect x="388" y="340" width="164" height="28" rx="8" fill="url(#fuel)" filter="url(#glow)"/>
+    <text x="470" y="310" text-anchor="middle" fill="#d9fff7" font-family="Arial, sans-serif" font-size="22" font-weight="700">POWER SKY CORE</text>
+  </g>
+  <g transform="translate(760 210)">
+    <rect x="0" y="0" width="420" height="92" rx="18" fill="#111820" stroke="#64748b"/>
+    <rect x="22" y="22" width="95" height="48" rx="8" fill="url(#fuel)"/>
+    <text x="145" y="38" fill="#e5edf5" font-size="22" font-family="Arial" font-weight="700">Solid Fuel Cartridge</text>
+    <text x="145" y="66" fill="#94a3b8" font-size="17" font-family="Arial">Al-Zn-Mg thermal-triggered system</text>
+    <path d="M210 120 C 320 125, 330 205, 240 236" fill="none" stroke="#74f2ce" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+    <rect x="0" y="220" width="420" height="92" rx="18" fill="#111820" stroke="#64748b"/>
+    <rect x="22" y="242" width="95" height="48" rx="8" fill="#132d2a" stroke="#74f2ce"/>
+    <text x="145" y="258" fill="#e5edf5" font-size="22" font-family="Arial" font-weight="700">Controlled H₂ Generator</text>
+    <text x="145" y="286" fill="#94a3b8" font-size="17" font-family="Arial">Prediction + buffer + staged reactor</text>
+    <path d="M210 340 C 320 350, 330 425, 240 458" fill="none" stroke="#74f2ce" stroke-width="6" stroke-linecap="round" filter="url(#glow)"/>
+    <rect x="0" y="442" width="420" height="92" rx="18" fill="#111820" stroke="#64748b"/>
+    <rect x="22" y="464" width="95" height="48" rx="8" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="145" y="480" fill="#e5edf5" font-size="22" font-family="Arial" font-weight="700">External PEM Power Unit</text>
+    <text x="145" y="508" fill="#94a3b8" font-size="17" font-family="Arial">Electric output to UAV drive system</text>
+  </g>
+  <g transform="translate(88 690)">
+    <text fill="#ffffff" font-family="Arial, sans-serif" font-size="54" font-weight="800">Programmable aviation energy</text>
+    <text y="54" fill="#a7f3d0" font-family="Arial, sans-serif" font-size="25">From metal cartridge to controlled hydrogen to electric flight</text>
+  </g>
+</svg>
